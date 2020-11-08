@@ -13,7 +13,7 @@ export default function Table() {
   ];
 
   const resetSearch = () => {
-      tableRef.current.onSearchChange(searchExternalRef.current.value);
+    tableRef.current.onSearchChangeDebounce(searchExternalRef.current.value);
   };
 
   return (
